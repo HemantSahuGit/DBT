@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: bronze_date
+    description: staging table for orders
+    config:
+      materialized: view
+  - name: bronze_product
+    description: staging table for customers
+    config:
+      materialized: view
