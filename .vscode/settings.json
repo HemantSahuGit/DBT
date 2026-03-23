@@ -1,0 +1,4 @@
+{
+    "sqlfmt.useConfigFile": true,
+    "dbt.perspectiveTheme": "Pro Dark"
+}

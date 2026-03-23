@@ -5,7 +5,9 @@ models:
     description: staging table for orders
     config:
       materialized: view
+      schema: bronze
   - name: bronze_product
     description: staging table for customers
     config:
       materialized: view
+      schema: bronze
