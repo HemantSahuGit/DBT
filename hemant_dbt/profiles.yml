@@ -6,6 +6,6 @@ hemant_dbt:
       http_path: /sql/1.0/warehouses/37f5f654655d0301
       schema: default
       threads: 1
-      token: dapi3ede095cebacde15284c96c2ca62dc1a
+      token: {{ env_var("DBT_DATABRICKS_TOKEN") }}
       type: databricks
   target: dev
