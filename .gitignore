@@ -8,3 +8,7 @@ wheels/
 
 # Virtual environments
 .venv
+
+# dbt profiles and secrets
+hemant_dbt/profiles.yml
+logs/

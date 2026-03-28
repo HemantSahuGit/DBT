@@ -5,7 +5,36 @@ models:
     description: staging table for orders
     config:
       materialized: view
+      schema: bronze
   - name: bronze_product
     description: staging table for customers
     config:
       materialized: view
+      schema: bronze
+  - name: bronze_sales
+    columns:
+      - name: sales_id
+        description: primary key for sales table
+        data_tests:
+          - not_null
+          - unique
+      - name: gross_amount
+        data_tests:
+          - generic_non_negative
+  - name: bronze_store
+    description: staging table for store
+    columns:
+      - name: store_sk
+        description: primary key for store table
+        data_tests:
+          - not_null
+          - unique
+      - name: store_name
+        description: name of the store
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['MegaMart Manhattan', 'MegaMart Brooklyn', 'MegaMart Austin','MegaMart San Jose','MegaMart Toronto']
+              config:
+                severity: warn
