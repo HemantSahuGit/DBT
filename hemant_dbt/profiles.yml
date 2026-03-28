@@ -2,18 +2,18 @@ hemant_dbt:
   outputs:
     dev:
       catalog: dbt_tutorial_dev
-      host: dbc-c17907d6-ea65.cloud.databricks.com
+      host: 
       http_path: /sql/1.0/warehouses/37f5f654655d0301
       schema: default
       threads: 1
-      token: dapi43b2d2e5a5e04e2da7819bad77ae9674
+      token: 
       type: databricks
     prod:
       catalog: dbt_tutorial_prod
-      host: dbc-c17907d6-ea65.cloud.databricks.com
+      host: 
       http_path: /sql/1.0/warehouses/37f5f654655d0301
       schema: default
       threads: 1
-      token: dapi43b2d2e5a5e04e2da7819bad77ae9674
+      token: 
       type: databricks
   target: dev
